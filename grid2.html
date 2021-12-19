@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2</title>
+
+    <style>
+
+
+        .grid-container{
+            display:grid;
+            grid-template-columns: auto auto auto auto auto auto ;
+            grid-gap: 5px 15px;
+            grid-template-rows: auto 200px auto;
+        }
+        .grid-container > div{
+            background-color:rgb(150, 82, 76);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        
+        .item1{
+            grid-column: 1/7;
+
+        }
+        .item2{
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+
+        .item3{
+            grid-column: 2/4;
+        }
+        .item4{
+            grid-column: 4/7;
+        }
+        .item5{
+            grid-column: 2/7;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="item1">Header
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ducimus architecto labore eos, dolore autem soluta perferendis fuga ad reprehenderit doloribus magni. Hic corrupti iusto officia vero architecto atque animi assumenda, sit odio labore. Nihil sunt rerum dolorum delectus odio voluptatibus dolore corrupti ut iure beatae nobis doloremque esse eos numquam, magnam officia saepe, ab facilis. Rerum sapiente beatae distinctio, repellendus autem commodi tempore? Delectus necessitatibus placeat velit, dolorum adipisci saepe voluptatum nulla, laboriosam ea inventore dignissimos ipsum iure vero. Obcaecati laudantium possimus incidunt et, nulla iure temporibus nemo similique numquam accusantium ut, sit eos magni modi excepturi quo rerum quaerat dolores velit expedita dignissimos est? Neque aut error sunt sed mollitia, veniam maiores tenetur eaque saepe, laudantium ex quasi modi dolorum itaque!</p>
+        </div>
+        <div class="item2">Menu
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="item3">Main</div>
+        <div class="item4">Aside</div>
+        <div class="item5">Footer</div>
+    </div>
+    
+</body>
+</html>
